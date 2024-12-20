@@ -1,0 +1,173 @@
+/* Global Styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f8ff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 1rem 2rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: auto;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff704d;
+}
+
+/* Flight Details Section */
+.flight-details {
+    padding: 6rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flight-info-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    box-shadow: 10px 10px 15px orangered; 
+
+}
+
+.flight-info {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s ease;
+}
+
+.flight-info h3 {
+    font-size: 1.8rem;
+    color: #004080;
+    font-weight: bold;
+}
+
+.flight-info p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.flight-info a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #ff704d;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.flight-info a:hover {
+    background-color: #ff5733;
+}
+
+/* Animation Classes */
+.flight-info.slide-in-right {
+    animation: slideInRight 1s ease-out forwards;
+}
+
+.flight-info.slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #004080;
+    color: white;
+    width: 100%;
+}
+
+nav ul li a:hover{
+    color:black;
+    margin: 0px 9px;
+    background-color:transparent;
+    color:white ;
+    padding: 20px 14px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 15px;
+    width:70%;
+    
+
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: black;
+}
+

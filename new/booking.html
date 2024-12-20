@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatra Express | Booking</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Yatra Express</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Explore Services</a></li>
+                <li><a href="flights.html">Flights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Booking Form -->
+    <section class="booking-section">
+        <div class="booking-container">
+            <h2>Book Your Flight</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="arrival">Arrival Location:</label>
+                    <input type="text" id="arrival" name="arrival" required placeholder="Enter arrival location">
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Number of Passengers:</label>
+                    <input type="number" id="number" name="number" required placeholder="Enter number of passengers" min="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="payment">Payment Details:</label>
+                    <input type="text" id="payment" name="payment" required placeholder="Enter payment details">
+                </div>
+
+                <button type="submit" class="btn">Submit Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Yatra Express. All Rights Reserved.</p>
+    </footer>
+
+    <script src="booking.js"></script>
+</body>
+</html>
